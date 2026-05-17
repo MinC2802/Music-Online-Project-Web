@@ -1,5 +1,9 @@
-
 <?php
+// Put this at the very top of db.php to force errors to show up
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 	// define host, db, user, password and charset as variables
 	if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.0.1') {
 		// 1. Local XAMPP Configuration
