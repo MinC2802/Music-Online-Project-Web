@@ -1,0 +1,1 @@
+user includes both retailer and user profiles
