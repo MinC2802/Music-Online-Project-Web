@@ -9,9 +9,9 @@
 		$pass	 = '';
 	} else {
 		// 2. InfinityFree Configuration (Replace these placeholder values with your live ones)
-		$host	 = 'sql123.infinityfree.com';  // Your MySQL Hostname from InfinityFree panel
-		$user	 = 'if0_34567890';             // Your MySQL Username from InfinityFree panel
-		$pass	 = 'YourInfinityFreePassword';  // Your InfinityFree Client Account Password
+		$host	 = 'sql302.infinityfree.com';  // Your MySQL Hostname from InfinityFree panel
+		$user	 = 'if0_41946538';             // Your MySQL Username from InfinityFree panel
+		$pass	 = 'VZvpkrWXyznb6';  // Your InfinityFree Client Account Password
 		$db		 = 'if0_34567890_vinyl_store'; // Your InfinityFree Database Name
 	}
 
