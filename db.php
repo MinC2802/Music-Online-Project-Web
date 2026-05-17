@@ -1,11 +1,19 @@
 
 <?php
 	// define host, db, user, password and charset as variables
-	$host	 = 'localhost';
-	$db		 = 'vinyl_store'; // database name
-	$user	 = 'root';
-	$pass	 = '';
-	$charset = 'utf8mb4';
+	if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.0.1') {
+		// 1. Local XAMPP Configuration
+		$host	 = 'localhost';
+		$db		 = 'vinyl_store'; // your local database name
+		$user	 = 'root';
+		$pass	 = '';
+	} else {
+		// 2. InfinityFree Configuration (Replace these placeholder values with your live ones)
+		$host	 = 'sql123.infinityfree.com';  // Your MySQL Hostname from InfinityFree panel
+		$user	 = 'if0_34567890';             // Your MySQL Username from InfinityFree panel
+		$pass	 = 'YourInfinityFreePassword';  // Your InfinityFree Client Account Password
+		$db		 = 'if0_34567890_vinyl_store'; // Your InfinityFree Database Name
+	}
 
 	// connect to database with preset variables
 	$dsn  = "mysql:host=$host; dbname=$db; charset=$charset";
